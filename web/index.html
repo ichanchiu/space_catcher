@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太空捕手：星際探險 (Web Version)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="ui-layer">
+            <div id="score-display">Score: 0</div>
+            
+            <div id="start-screen" class="screen active">
+                <h1>SPACE CATCHER</h1>
+                <h2>GALAXY</h2>
+                <div class="difficulty-menu">
+                    <button class="btn" data-diff="easy" style="--btn-color: #00ff66;">1. TRAINEE (Easy)</button>
+                    <button class="btn" data-diff="normal" style="--btn-color: #ffd700;">2. PILOT (Normal)</button>
+                    <button class="btn" data-diff="hard" style="--btn-color: #ff3232;">3. COMMANDER (Hard)</button>
+                </div>
+                <p class="instruction">Use <span class="key">←</span> <span class="key">→</span> to Move</p>
+            </div>
+
+            <div id="game-over-screen" class="screen">
+                <h1 style="color: #ff3232; text-shadow: 0 0 20px rgba(255, 50, 50, 0.8);">GAME OVER</h1>
+                <h2 id="final-score">Final Score: 0</h2>
+                <button class="btn" id="restart-btn" style="--btn-color: #ffffff;">PLAY AGAIN</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
