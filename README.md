@@ -40,7 +40,7 @@
 **如何執行**：
 1.  開啟終端機 (Terminal) 並進入專案資料夾：
     ```bash
-    cd /Users/ichanchiu/Spaceworld
+    cd /.../space_catcher
     ```
 2.  啟動虛擬環境 (如果尚未啟動)：
     ```bash
@@ -57,7 +57,7 @@
 **如何執行**：
 由於瀏覽器安全性限制，**請勿直接雙擊 html 檔案開啟**，必須透過 Local Server 執行才能正常載入圖片與音效。
 
-1.  在終端機中，確保位於專案根目錄 (`/Users/ichanchiu/Spaceworld`)。
+1.  在終端機中，確保位於專案根目錄 (`/.../space_catcher`)。
 2.  啟動 Python 內建的 HTTP 伺服器：
     ```bash
     python3 -m http.server --directory web
